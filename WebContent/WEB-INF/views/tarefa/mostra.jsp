@@ -11,6 +11,8 @@
 	<script src="<c:url value="/resources/js/jquery.js" />"></script>
 	<script src="<c:url value="/resources/js/jquery-ui.js" />"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="resources/css/caelum.css">
+	
 	<title>Mostrar Dados da Tarefa</title>
 </head>
 <body>

@@ -4,7 +4,8 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" type="text/css" href="/resources/css/Tabela.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/caelum.css">
+
 	<title>Lista de Usuários</title>
 </head>
 <body>

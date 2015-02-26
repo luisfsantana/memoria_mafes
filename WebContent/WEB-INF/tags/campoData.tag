@@ -10,10 +10,8 @@
     $( "#${id}" ).datepicker({
     	changeMonth: true,	
         changeYear: true,
-        maxDate: '0',
         navigationAsDateFormat: true,
         nextText: "Later",
-        yearRange: "1950:2005"
      });
      $( "#${id}" ).datepicker( "option", "showAnim", "drop" );
      $( "#${id}" ).datepicker( "option", "dateFormat", "dd/mm/yy");

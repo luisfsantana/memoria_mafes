@@ -12,6 +12,8 @@
 		<script src="<c:url value="/resources/js/jquery.js" />"></script>
 	    <script src="<c:url value="/resources/js/jquery-ui.js" />"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="resources/css/caelum.css">
+		
 		<title>Adiciona Tarefa</title>
 	</head>
 <body>
@@ -69,7 +71,7 @@
 			<input type="submit" value="Adicionar" align="middle"/>
 	</form>
 	</div>
-	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 	
 	<c:import url="/WEB-INF/jsp/rodape.jsp" />
 	

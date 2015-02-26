@@ -10,7 +10,8 @@
 	<link href="<c:url value="/resources/css/jquery-ui.css" />" rel="stylesheet">
 	<script src="<c:url value="/resources/js/jquery.js" />"></script>
 	<script src="<c:url value="/resources/js/jquery-ui.js" />"></script>
-
+	<link rel="stylesheet" type="text/css" href="resources/css/caelum.css">
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Prioridades</title>
 	
