@@ -60,7 +60,7 @@
 			<input type="hidden" name="id" value="${peca.id}">
 			
 			<input type="submit" value="Alterar" />
-	</form><br/>
+	</form><br/><br/>
 	<a href="logout">Sair</a>
 	
 	</div>
