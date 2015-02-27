@@ -11,12 +11,13 @@
 		<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	
 		<c:import url="/WEB-INF/jsp/cabecalho.jsp" />
-	
-		<a href="logout">Sair do sistema</a>
-		<h2>Página inicial da Lista de Tarefas</h2>
-	    <p>Bem vindo, ${usuarioLogado.login}</p> 
-	    <a href="listaTarefas">Clique aqui</a> para acessar a lista de tarefas
-	    
+		<div style="position: absolute; left: 100px;">	
+			<h2>Página inicial da Lista de Tarefas</h2>
+		    <p>Bem vindo, ${usuario.nome}</p> 
+		    <a href="listaTarefas">Clique aqui</a> para acessar a lista de tarefas<br/><br/>
+			<a href="logout">Sair</a>
+		
+		</div>	    
 	    <c:import url="/WEB-INF/jsp/rodape.jsp" />
 		
 </body>

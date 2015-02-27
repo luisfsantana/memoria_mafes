@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="Tabela.css">
+	<link rel="stylesheet" type="text/css" href=resources/css/caelum.css>
 	
 	<title>Página Inicial Mafes</title>
 </head>

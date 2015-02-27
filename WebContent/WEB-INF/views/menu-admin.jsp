@@ -13,15 +13,17 @@
 		<c:import url="/WEB-INF/jsp/cabecalho.jsp" />
 		
 		<div style="position: absolute; left: 100px;">
-		<a href="logout">Sair do sistema</a>
 		<h2>Página inicial da Lista de Tarefas</h2>
-	    <p>Bem vindo, ${usuarioLogado.login}</p> 
+	    <p>Bem vindo, Sr. ${usuario.nome}</p> 
 	    
 	    <a href="listaTarefas">Clique aqui</a> para acessar a lista de tarefas <br/><br/>
 	    <a href="novoUsuario">Adicionar Usuário</a><br/><br/>
 	    <a href="adicionaPrioridade_robertoForm">Clique aqui</a> para adicionar as prioridades <br/><br/>
+	    <a href="logout">Sair</a>
+		
 	    </div>
-	    <br/><br/><br/><br/>
+	    <br/><br/><br/><br/><br/><br/>
+		
 	    <c:import url="/WEB-INF/jsp/rodape.jsp" />
 
 </body>

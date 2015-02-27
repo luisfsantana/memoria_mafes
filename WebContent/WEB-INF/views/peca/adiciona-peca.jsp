@@ -22,7 +22,6 @@
     <c:import url="/WEB-INF/jsp/cabecalho.jsp" />
     
 	<div style="position: absolute; left: 100px;">
-	<a href="logout">Sair do sistema</a><br/>
 	<h2>Adicionar Peça</h2>
 	<form action="adicionaPeca" method="post">
 			Quantidade:&nbsp;&nbsp; <input type="number" name="quantidade" min="1" max="100">
@@ -61,8 +60,10 @@
 			
 			<input type="submit" value="Adicionar Peça" />
 	</form>
+	<a href="logout">Sair</a><br/>
+	
 	</div>
-	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	<br/><br/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 	<c:import url="/WEB-INF/jsp/rodape.jsp" />
 </body>
 </html>

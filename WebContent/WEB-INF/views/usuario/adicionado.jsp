@@ -14,9 +14,9 @@
 	
 	
 	<h2>Usuario Adicionado!</h2>
-	<a href="logout">Sair do sistema</a><br/>
 	<a href=novoUsuario> Novo Usuário </a><br/><br/>
 	<a href=loginForm>Àrea de Login</a>
+	<a href="logout">Sair</a><br/>
 		
 	<c:import url="/WEB-INF/jsp/rodape.jsp" />
 </body>

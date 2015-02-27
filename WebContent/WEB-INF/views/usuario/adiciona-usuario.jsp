@@ -16,7 +16,6 @@
 		<c:import url="/WEB-INF/jsp/cabecalho.jsp" />
 	
 		<div  style="position: absolute; left: 100px;">
-		<a href="logout">Sair do sistema</a><br/>
 		<h2>Cadastrar Usuário</h2>
 		<form action="adicionaUsuario" method="post" >
 			
@@ -45,8 +44,10 @@
 			
 			<input type="submit" value="Gravar" size="20"/>
 		</form>
+		<br/><a href="logout">Sair</a><br/>
+		
 		</div>
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br/><br/><br/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 		<c:import url="/WEB-INF/jsp/rodape.jsp" />
 </body>
 </html>

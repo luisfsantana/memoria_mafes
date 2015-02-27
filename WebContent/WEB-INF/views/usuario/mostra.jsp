@@ -12,7 +12,6 @@
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 		
 	<c:import url="/WEB-INF/jsp/cabecalho.jsp" />
-	<a href="logout">Sair do sistema</a><br/>
 			
 	<table>
 		<tr>
@@ -39,6 +38,7 @@
 			
 			<input type="submit" value="Alterar" />
 	</form>
+	<br/><br/><a href="logout">Sair</a><br/>
 	
 	<c:import url="/WEB-INF/jsp/rodape.jsp" />
 </body>

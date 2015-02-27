@@ -3,6 +3,7 @@ package br.com.mafes.memoria.controller;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.mafes.memoria.jdbc.dao.UsuarioDAO;
@@ -17,11 +18,12 @@ public class LoginController {
 	}
 	
 	@RequestMapping("efetuaLogin")
-	public String efetuaLogin(Usuario usuario, HttpSession session){
+	public String efetuaLogin(Model model, Usuario usuario, HttpSession session){
 		UsuarioDAO dao = new UsuarioDAO();
 		if(dao.existeUsuario(usuario)){
 			session.setAttribute("usuarioLogado", usuario);
 			usuario = dao.getUsuarioLoginSenha(usuario.getLogin(), usuario.getSenha());
+			model.addAttribute("usuario", usuario);
 			if(usuario.getGrupo().equals("Comum") || usuario.getGrupo().isEmpty())
 				return "menu";
 			else

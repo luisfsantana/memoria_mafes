@@ -60,7 +60,9 @@
 			<input type="hidden" name="id" value="${peca.id}">
 			
 			<input type="submit" value="Alterar" />
-	</form>
+	</form><br/>
+	<a href="logout">Sair</a>
+	
 	</div>
 	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 	<c:import url="/WEB-INF/jsp/rodape.jsp" />	

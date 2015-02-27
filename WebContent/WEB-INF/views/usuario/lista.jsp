@@ -15,7 +15,7 @@
 		<c:import url="/WEB-INF/jsp/cabecalho.jsp" />
 		
 		<div style="position: absolute; left: 100px;">	
-		<a href="logout">Sair do sistema</a><br/>
+		<a href="logout">Sair</a><br/>
 		
 		<table border="1">
 			<tr>

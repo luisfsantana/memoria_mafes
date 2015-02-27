@@ -25,7 +25,6 @@
 			
 	
 	<div style="position: absolute; left: 100px;" >		
-	<a href="logout">Sair do sistema</a><br/>
 	<h2>Insira os dados da Tarefa</h2>
 	
 	<form action="adicionaTarefa" method="post">
@@ -65,13 +64,17 @@
 		 	
 		 	Ordem da Tarefa em relação as outras: <input type="text" name="ordem" /><br /><br />
 			<input type="hidden" name="id_usuario" value="${usuario.id}"><!--### TODO: Passar objeto usuário -->
-			Finalizado: <input type="checkbox"  name="finalizado"> <br /><br />
-			<input type="hidden" name="_finalizado" value="on"/>
+			
+			
+			Finalizado: <input type="checkbox"  name="finalizadoa"> <br /><br />
+			<input type="hidden" name="_finalizadoa" value="on"/>
 			
 			<input type="submit" value="Adicionar" align="middle"/>
 	</form>
+	<br/><a href="logout">Sair</a>
+	
 	</div>
-	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 	
 	<c:import url="/WEB-INF/jsp/rodape.jsp" />
 	

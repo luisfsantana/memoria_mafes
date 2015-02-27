@@ -19,7 +19,6 @@
 		
 	<c:import url="/WEB-INF/jsp/cabecalho.jsp" />
 	<div style="position: absolute; left: 100px;">
-	<a href="logout">Sair do sistema</a><br/>
 		
 	
 	<h3>Alterar tarefa - ${tarefa.id} - ${tarefa.nome}</h3>
@@ -76,9 +75,11 @@
 			
 			<input type="submit" value="Alterar" />
 	</form>
+	<br/><a href="logout">Sair</a><br/>
+	
 	</div>
 	
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	<c:import url="/WEB-INF/jsp/rodape.jsp" />
 </body>
 </html>

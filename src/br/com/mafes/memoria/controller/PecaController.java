@@ -37,6 +37,7 @@ public class PecaController {
 	@RequestMapping("listaPecasDaTarefa")
 	public String listaTarefa(Model model, Tarefa tarefa){
 		PecaDAO dao = new PecaDAO();
+		
 		model.addAttribute("pecas", dao.getListPecasIdTarefa(tarefa.getId()));
 		
 		return "peca/lista";
@@ -53,13 +54,9 @@ public class PecaController {
 		PecaDAO dao = new PecaDAO();
 		dao.adiciona(peca);
 		
-		TarefaDAO tarefa = new TarefaDAO();
+		Long id = peca.getId_tarefa();
 		
-		model.addAttribute("id_tarefa", peca.getId_tarefa());
-		model.addAttribute("tarefa", tarefa);
-		
-		
-		return "listaPecasDaTarefa";
+		return "redirect:listaPecasDaTarefa?id="+id;
 		
 	}
 	

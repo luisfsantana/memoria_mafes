@@ -29,8 +29,8 @@
 <body>
 	<c:import url="/WEB-INF/jsp/cabecalho.jsp" />
 	<div style="position: absolute; left: 0px;">
-	<a href="logout">Sair do sistema</a><br/>
 		
+	<a href="logout">Sair</a>
 	
 	<h3>Prioridade tarefa</h3>
 		

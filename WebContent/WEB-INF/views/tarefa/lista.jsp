@@ -9,7 +9,6 @@
 	<link href="<c:url value="resources/css/jquery-ui.css" />" rel="stylesheet">
 	<script src="<c:url value="resources/js/jquery.js" />"></script>
 	<script src="<c:url value="resources/js/jquery-ui.js" />"></script>
-	<link rel="stylesheet" type="text/css" href="resources/css/Tabela.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/caelum.css">
 	
 	<title>Lista de todas as tarefas</title>
@@ -28,9 +27,19 @@
 		<c:import url="/WEB-INF/jsp/cabecalho.jsp" />
 		
 		 
-		<a href="logout">Sair do sistema</a><br/>
+		<a href="logout">Sair</a><br/>
 		
 		<a href="novaTarefa">Criar nova tarefa</a> <br/><br/>
+		
+		Ordenar por:&nbsp;&nbsp; 
+		<select name="ordenacao">
+		  <option value="Prioridade_ord">Prioridade</option>
+		  <option value="Priridade_roberto_ord">Prioridade Sr. Roberto</option>
+	 	  <option value="Ordem_ord">Ordem da Tarefa</option>
+		  <option value="Nome_ord">Nome</option>
+		</select>
+		<br /><br />
+		
 		
 		<table>
 			<tr>
@@ -43,7 +52,7 @@
 				<th>Data Fim</th>
 				<th>Responsável</th>
 				<th>Finalizado?</th>
-				
+				<th>Finalizado em</th>
 			</tr>
 			 
 			<!-- percorre contatos montando as linhas da tabela -->
