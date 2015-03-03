@@ -35,6 +35,7 @@ public class Tarefa {
 	@NotNull(message="{tarefa.datafim.vazia}")  
 	private Calendar datafim;
 	
+	@NotNull(message="{tarefa.responsavel.vazia}")  
 	private String responsavel;
 	private Long id_usuario;
 	private Long ordem;

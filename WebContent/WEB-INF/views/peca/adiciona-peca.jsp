@@ -16,8 +16,6 @@
 	<title>Adiciona Peça</title>
 </head>
 <body>
-	<%@taglib tagdir="/WEB-INF/tags" prefix="mafes" %>
-	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	
     <c:import url="/WEB-INF/jsp/cabecalho.jsp" />
     
@@ -45,7 +43,7 @@
 	
 			
 			<br /><br />
-			Data: <mafes:campoData name="data" id="data" />
+			Data estimada aquisição: <mafes:campoData name="data" id="data" />
 			<form:errors path="peca.data" cssStyle="color:red"/>
 			
 			<br /><br />

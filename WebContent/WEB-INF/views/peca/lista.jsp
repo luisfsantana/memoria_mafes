@@ -15,8 +15,8 @@
 		
 		<c:import url="/WEB-INF/jsp/cabecalho.jsp" />
 		<a href="logout">Sair</a><br/><br/>
-	
-		
+		<a href="listaTarefas">Clique aqui</a> para acessar a lista de tarefas<br/><br/>
+			
 		<table>
 			<tr>
 				<th>Quantidade</th>

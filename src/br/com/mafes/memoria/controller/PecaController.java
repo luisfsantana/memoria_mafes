@@ -75,7 +75,13 @@ public class PecaController {
 	}
 	
 	@RequestMapping("alteraPeca")
-	public String altera(Peca peca) {
+	public String altera(@Valid Peca peca, BindingResult result) {
+		
+		if(result.hasErrors()){
+			Long id = peca.getId();
+			return "redirect:mostraPeca?id="+id;
+		}	
+		
 	  PecaDAO dao = new PecaDAO();
 	  dao.altera(peca);
 	  return "redirect:listaPecas";

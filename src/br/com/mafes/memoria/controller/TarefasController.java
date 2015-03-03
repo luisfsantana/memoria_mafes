@@ -72,7 +72,13 @@ public class TarefasController {
 	}
 	
 	@RequestMapping("alteraTarefa")
-	public String altera(Tarefa tarefa) {
+	public String altera(@Valid Tarefa tarefa, BindingResult result) {
+	
+	  if(result.hasErrors()){
+		  	Long id = tarefa.getId();
+			return "forward:mostraTarefa?id="+id;
+	  }
+		
 	  TarefaDAO dao = new TarefaDAO();
 	  dao.altera(tarefa);
 	  

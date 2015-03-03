@@ -33,7 +33,7 @@
 			  <option value="1" style="background-color: red">Urgente</option>
 			  <option value="2" style="background-color: orange">Alta</option>
 			  <option value="3" style="background-color: yellow">Média</option>
-			  <option value="4" style="background-color: blue">Baixa</option>
+			  <option value="4" style="background-color: green">Baixa</option>
 			</select>
 			<br /><br />
 			Status:&nbsp;&nbsp; 
@@ -66,8 +66,8 @@
 			<input type="hidden" name="id_usuario" value="${usuario.id}"><!--### TODO: Passar objeto usuário -->
 			
 			
-			Finalizado: <input type="checkbox"  name="finalizadoa"> <br /><br />
-			<input type="hidden" name="_finalizadoa" value="on"/>
+			Finalizado: <input type="checkbox"  name="finalizado"> <br /><br />
+			<input type="hidden" name="_finalizado" value="on"/>
 			
 			<input type="submit" value="Adicionar" align="middle"/>
 	</form>

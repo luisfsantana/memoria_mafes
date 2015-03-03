@@ -60,16 +60,16 @@
 				<tr>
 					<c:choose>
 						<c:when test="${tarefa.prioridade_roberto eq 1}">
-	    					<td><div style="background-color: #FF0000;" >Urgente</div></td>
+	    					<td><div align="center" style="background-color: #FF0000;" >Urgente</div></td>
 	  					</c:when>
 	  					<c:when test="${tarefa.prioridade_roberto eq 2}">
-	    					<td><div style="background-color: #FF8C00;" >Alta</div></td>
+	    					<td><div align="center" style="background-color: #FF8C00;" >Alta</div></td>
 	  					</c:when>
 					 	<c:when test="${tarefa.prioridade_roberto eq 3}">
-	    					<td><div style="background-color: #FFD700;" >Média</div></td>
+	    					<td><div align="center" style="background-color: #FFD700;" >Média</div></td>
 	  					</c:when>
 	  					<c:when test="${tarefa.prioridade_roberto eq 4}">
-	    					<td><div style="background-color: #32CD32;" >Baixa</div></td>
+	    					<td><div align="center" style="background-color: #32CD32;" >Baixa</div></td>
 	  					</c:when>
 	  					<c:otherwise>
 	  						<td>       </td>
@@ -77,16 +77,16 @@
   					</c:choose>
   					
   					<c:if test="${tarefa.prioridade eq 1}">
-    					<td><div style="background-color: #FF0000;" >Urgente</div></td>
+    					<td><div align="center" style="background-color: #FF0000;" >Urgente</div></td>
   					</c:if>
   					<c:if test="${tarefa.prioridade eq 2}">
-    					<td><div style="background-color: #FF8C00;" >Alta</div></td>
+    					<td><div align="center" style="background-color: #FF8C00;" >Alta</div></td>
   					</c:if>
 				 	<c:if test="${tarefa.prioridade eq 3}">
-    					<td><div style="background-color: #FFD700;" >Média</div></td>
+    					<td><div align="center" style="background-color: #FFD700;" >Média</div></td>
   					</c:if>
   					<c:if test="${tarefa.prioridade eq 4}">
-    					<td><div style="background-color: #32CD32;" >Baixa</div></td>
+    					<td><div align="center" style="background-color: #32CD32;" >Baixa</div></td>
   					</c:if>
 					
 				 	

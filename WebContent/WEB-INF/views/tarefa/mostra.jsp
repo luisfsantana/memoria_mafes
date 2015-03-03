@@ -3,6 +3,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@taglib tagdir="/WEB-INF/tags" prefix="mafes" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -55,18 +57,28 @@
 			  <option value="3" style="background-color: yellow">Média</option>
 			  <option value="4" style="background-color: blue">Baixa</option>
 			</select>
+			<br/><br/>
 			Status: <input type="text" name="status" value="${tarefa.status}" /><br /><br/>
-			Nome: <input type="text" name="nome" value="${tarefa.nome}" /><br/><br/>
+			Nome: <input type="text" name="nome" value="${tarefa.nome}" />
+			<form:errors path="tarefa.nome" cssStyle="color:red"/><br /><br />
+	
+			
 			Observações:<br/> <textarea name="observacao" cols="100" rows="5">${tarefa.observacao}</textarea><br /><br/>
+			<form:errors path="tarefa.observacao" cssStyle="color:red"/>
 			
 			<fmt:formatDate value="${tarefa.datainicio.time}" pattern="dd/MM/yyyy" var="theFormattedDate" /> 
 			Data Inicio: <mafes:campoData id="datainicio" name="datainicio" value="${theFormattedDate}"/><br /><br />
-			
+			<form:errors path="tarefa.datainicio" cssStyle="color:red"/>
+	
 			<fmt:formatDate value="${tarefa.datafim.time}" pattern="dd/MM/yyyy" var="theFormattedDate1" />
 			Data Fim: <mafes:campoData id="datafim" name="datafim" value="${theFormattedDate1}"/><br /><br />
+			<form:errors path="tarefa.datafim" cssStyle="color:red"/>
+	
 			Ordem da Tarefa em relação as outras: <input type="text" name="ordem" value="${tarefa.ordem}"/><br /><br />
 		
-			Responsável: <input type="text" name="responsavel" value="${tarefa.responsavel}" /><br/><br/>
+			Responsável: <input type="text" name="responsavel" value="${tarefa.responsavel}" />
+			<form:errors path="tarefa.responsavel" cssStyle="color:red"/><br /><br />
+	
 			Finalizado: <input type="checkbox"  name="finalizado"> <br /><br />
 			<input type="hidden" name="_finalizado" value="on"/>
 			
@@ -79,7 +91,7 @@
 	
 	</div>
 	
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	<c:import url="/WEB-INF/jsp/rodape.jsp" />
 </body>
 </html>

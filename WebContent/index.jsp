@@ -12,7 +12,7 @@
 	
 	<div align="center">
 		<h2>
-			Bem-Vindo ao sistema de gerenciamento de Projetos<br/>
+			Bem-Vindo ao sistema de gerenciamento de Projetos - VERSÃO BETA v1.0<br/>
 		</h2>
 		
 		<h3>Mafes Inteligência Agronômica <br/> <br/>
